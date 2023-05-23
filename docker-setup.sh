@@ -7,7 +7,7 @@ sudo systemctl enable docker
 sudo systemctl status docker
 sudo usermod -aG docker username 
 sudo systemctl restart docker 
-To run the below command wait for 5 Sec 
+echo "Wait for 5 Sec"
 sleep(5)
 sudo chmod 666 /var/run/docker.sock 
 sudo systemctl restart docker 
