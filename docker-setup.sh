@@ -11,3 +11,7 @@ To run the below command wait for 5 Sec 
 sleep(5)
 sudo chmod 666 /var/run/docker.sock 
 sudo systemctl restart docker 
+sudo curl -L "https://github.com/docker/compose/releases/download/v2.12.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo mv /usr/local/bin/docker-compose /usr/bin/docker-compose
+sudo chmod +x /usr/bin/docker-compose
+
